@@ -3,3 +3,8 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+body {
+    background-image: url('https://cdn.discordapp.com/attachments/931336892899819580/1089893228771299328/ornn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
