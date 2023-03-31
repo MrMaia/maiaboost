@@ -3,8 +3,47 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+
+.fontegrande {
+    font-weight: 600;
+}
+.fontegrande2 {
+    font-weight: 800;
+}
+.fontegrande3 {
+    font-weight: 200;
+}
+.textotamanho1 {
+    font-size: 4em;
+  }
+
+.textotamanho2 {
+    font-size: 1em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
     background-image: url('https://cdn.discordapp.com/attachments/931336892899819580/1089893228771299328/ornn.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
