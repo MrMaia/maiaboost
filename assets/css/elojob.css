@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fontegrande {
+    font-weight: 600;
+}
+.fontegrande2 {
+    font-weight: 800;
+}
+.fontegrande3 {
+    font-weight: 200;
+}
+.textotamanho1 {
+    font-size: 4em;
+  }
+
+.textotamanho2 {
+    font-size: 1em;
+  }
