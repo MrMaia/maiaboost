@@ -7,149 +7,247 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/elojob.css">
     <title>Maia Boost - Elojob</title>
 </head>
 
 <body>
     <header>
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-dark">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container d-flex flex-column align-items-center flex-md-row">
-                <div class="">
-                    <a class="navbar-brand" href="index_copy.html">
-                        <img src="assets/imgs/logo.png" width="120px" height="auto" alt="">
+                <div>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/imgs/logo.png" width="120px" height="auto" alt="Maia Boost">
                     </a>
                 </div>
                 <div class="itensnav">
-                    <ul class="navbar-nav d-flex flex-row gap-3 fontegrande fontegrande">
+                    <ul class="navbar-nav d-flex flex-row gap-3 fontegrande">
                         <li class="nav-item">
-                            <a class="nav-link text-danger" href="#">INÍCIO</a>
+                            <a class="nav-link text-white" href="index.html">INÍCIO</a>
                         </li>
-
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-danger" data-bs-toggle="dropdown" href="#"
+                            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#"
                                 role="button" aria-expanded="false">SERVIÇOS</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">ELOJOB</a></li>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="elojob.html">ELOJOB</a></li>
                                 <li><a class="dropdown-item" href="#">DUO BOOST</a></li>
                                 <li><a class="dropdown-item" href="#">MD10</a></li>
                                 <li><a class="dropdown-item" href="#">VITÓRIAS</a></li>
                                 <li><a class="dropdown-item" href="#">MAESTRIA</a></li>
                                 <li><a class="dropdown-item" href="#">COACH</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
+                                <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">MANUTENÇÃO DE ELO</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
+                                <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">CLASH - ELOJOB</a></li>
                                 <li><a class="dropdown-item" href="#">CLASH - DUOBOOST</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-danger" data-bs-toggle="dropdown" href="#"
+                            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#"
                                 role="button" aria-expanded="false">CONTATO</a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-dark">
                                 <li><a class="dropdown-item" href="#">CONTATO</a></li>
                                 <li><a class="dropdown-item" href="#">TRABALHE CONOSCO</a></li>
                             </ul>
                         </li>
-                        <a href="index_copy.html"
-                            class="btn btn-round btn-danger btn-gray-shadow btn-sm fontegrande d-none d-md-block">ÁREA
-                            DO CLIENTE</a>
-                        <a href="index_copy.html">
-                            <img class="d-md-none" src="assets/imgs/person-icon-red-14.jpg" alt=""
-                                style="height: 40px;">
-                        </a>
+                        <a href="#" class="btn btn-danger btn-sm fontegrande d-none d-md-block">ÁREA DO CLIENTE</a>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <!--FORMULÁRIO-->
-        <div class="container d-flex flex-column">
-            <div class="titulo text-center">
-                <h6 class="mt-5 mb-0 text-primary">Elo Boosting (Elojob)</h6>
-                <h1 class="mt-0 pt-0" style="font-size: 4em; font-weight: 600;">ELOJOB</h1>
-                <p class="mb-5">Se você está buscando uma maneira rápida e segura de subir de elo, o serviço de EloJob
-                    (ou Elo Boost) para League Of Legends (LoL) é a escolha perfeita. Com jogadores de alto nível,
-                    oferecemos não apenas agilidade, mas também excelência e segurança em todo o processo. E o melhor de
-                    tudo, com preços super acessíveis. </p>
+    <main class="py-5">
+        <div class="container">
+
+            <!-- TÍTULO -->
+            <div class="titulo-page text-center mb-5">
+                <h6>Elo Boosting</h6>
+                <h1>ELOJOB</h1>
+                <p class="mt-3">Um jogador de alto nível irá jogar em sua conta e garantir o elo desejado de forma
+                    rápida e segura. Preços acessíveis, boosters Grão-Mestre e Desafiante.</p>
             </div>
-            <div class="itensform d-flex flex-column gap-5">
-                <!--ELO ATUAL-->
-                <div class="select1 d-flex flex-column align-items-center">
-                    <p>Seu Elo atual:</p>
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="Ferro" selected>Ferro</option>
-                        <option value="Bronze">Bronze</option>
-                        <option value="Prata">Prata</option>
-                        <option value="Ouro">Ouro</option>
-                        <option value="Platina">Platina</option>
-                        <option value="Diamante">Diamante</option>
-                        <option value="Mestre">Mestre</option>
-                        <option value="GraoMestre">Grão Mestre</option>
-                    </select>
-                    <img class="img-fluid" src="assets/imgs/rank-1.png" alt="" style="width: 70%;">
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="divisao1">I</option>
-                        <option value="divisao2">II</option>
-                        <option value="divisao3">III</option>
-                        <option value="divisao4" selected>IV</option>
-                    </select>
+
+            <!-- FORMULÁRIO PRINCIPAL -->
+            <div class="d-flex flex-column gap-4">
+
+                <!-- ELO ATUAL / ELO DESEJADO -->
+                <div class="d-flex flex-column flex-lg-row gap-3 align-items-stretch">
+
+                    <!-- ELO ATUAL -->
+                    <div class="rank-card">
+                        <span class="rank-label">Seu Elo Atual</span>
+                        <select id="selectAtual" class="form-select mb-3" onchange="updateRankImage('imgAtual', this.value); calculatePrice()">
+                            <option value="Ferro"     selected>Ferro</option>
+                            <option value="Bronze"           >Bronze</option>
+                            <option value="Prata"            >Prata</option>
+                            <option value="Ouro"             >Ouro</option>
+                            <option value="Platina"          >Platina</option>
+                            <option value="Diamante"         >Diamante</option>
+                            <option value="Mestre"           >Mestre</option>
+                            <option value="GraoMestre"       >Grão Mestre</option>
+                        </select>
+                        <img id="imgAtual" class="rank-img" src="assets/imgs/rank-1.png" alt="Rank atual">
+                        <select id="divAtual" class="form-select" onchange="calculatePrice()">
+                            <option value="4">Divisão IV</option>
+                            <option value="3">Divisão III</option>
+                            <option value="2">Divisão II</option>
+                            <option value="1">Divisão I</option>
+                        </select>
+                    </div>
+
+                    <!-- SETA -->
+                    <div class="arrow-divider d-none d-lg-flex">
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                    </div>
+                    <div class="text-center my-2 d-lg-none" style="font-size:2rem; color:#dc3545;">
+                        <i class="bi bi-arrow-down-circle-fill"></i>
+                    </div>
+
+                    <!-- ELO DESEJADO -->
+                    <div class="rank-card">
+                        <span class="rank-label">Elo Desejado</span>
+                        <select id="selectDesejado" class="form-select mb-3" onchange="updateRankImage('imgDesejado', this.value); calculatePrice()">
+                            <option value="Ferro"            >Ferro</option>
+                            <option value="Bronze"     selected>Bronze</option>
+                            <option value="Prata"            >Prata</option>
+                            <option value="Ouro"             >Ouro</option>
+                            <option value="Platina"          >Platina</option>
+                            <option value="Diamante"         >Diamante</option>
+                            <option value="Mestre"           >Mestre</option>
+                            <option value="GraoMestre"       >Grão Mestre</option>
+                            <option value="Desafiante"       >Desafiante</option>
+                        </select>
+                        <img id="imgDesejado" class="rank-img" src="assets/imgs/rank-2.png" alt="Rank desejado">
+                        <select id="divDesejado" class="form-select" onchange="calculatePrice()">
+                            <option value="4">Divisão IV</option>
+                            <option value="3">Divisão III</option>
+                            <option value="2">Divisão II</option>
+                            <option value="1">Divisão I</option>
+                        </select>
+                    </div>
                 </div>
-                <!--ELO DESEJADO-->
-                <div class="select2 d-flex flex-column align-items-center">
-                    <p>Elo desejado:</p>
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="Ferro" selected>Ferro</option>
-                        <option value="Bronze">Bronze</option>
-                        <option value="Prata">Prata</option>
-                        <option value="Ouro">Ouro</option>
-                        <option value="Platina">Platina</option>
-                        <option value="Diamante">Diamante</option>
-                        <option value="Mestre">Mestre</option>
-                        <option value="GraoMestre">Grão Mestre</option>
-                        <option value="Desafiante">Desafiante</option>
-                    </select>
-                    <img class="m-1" src="assets/imgs/rank-2.png" alt="" style="width: 70%;">
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="divisao1">I</option>
-                        <option value="divisao2">II</option>
-                        <option value="divisao3">III</option>
-                        <option value="divisao4" selected>IV</option>
-                    </select>
+
+                <!-- FILA DESEJADA -->
+                <div class="queue-card">
+                    <span class="rank-label d-block text-center mb-3">Fila Desejada</span>
+                    <div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+                        <img class="queue-img" src="assets/imgs/poro-jinx.png" alt="Fila">
+                        <div class="d-flex gap-3">
+                            <button id="btnSoloDuo" class="queue-btn active" onclick="selectQueue('Solo/Duo')">
+                                <i class="bi bi-person me-2"></i>Solo / Duo
+                            </button>
+                            <button id="btnFlex" class="queue-btn" onclick="selectQueue('Flex')">
+                                <i class="bi bi-people me-2"></i>Flex
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <!--FILA DESEJADA-->
-                <div class="select3 d-flex flex-column align-items-center">
-                    <p>Qual a fila desejada?</p>
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="soloduo" selected>Solo/Duo</option>
-                        <option value="flex">Flex</option>
-                    </select>
-                    <img class="m-4" src="assets/imgs/poro-jinx.png" alt="" style="width: 70%;">
+
+                <!-- PREÇO E COMPRA -->
+                <div class="price-card">
+                    <p class="price-label">Resumo do Pedido</p>
+                    <p id="priceRoute" class="price-route">Ferro IV → Bronze IV</p>
+                    <div class="d-flex align-items-center justify-content-center gap-3 mb-2">
+                        <span id="priceOld" class="price-old">R$ 40,00</span>
+                        <span class="discount-badge">-21%</span>
+                    </div>
+                    <p id="priceNew" class="price-new">R$ 32,00</p>
+                    <p class="text-white-50 small mb-4">Parcelamento em até 18x no cartão de crédito</p>
+                    <button class="btn-comprar" onclick="comprar()">
+                        <i class="bi bi-bag-check me-2"></i>COMPRAR AGORA
+                    </button>
                 </div>
-                <!--PREÇOS E COMPRA-->
-                <div class="final d-flex flex-column align-items-center">
-                    <p>Prata IV para o Prata I</p>
-                    <p>DE: R$46,00</p>
-                    <p>POR: R$36,00</p>
-                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
-                </div>
+
             </div>
         </div>
     </main>
 
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <script>
+        const rankImages = {
+            'Ferro':      'assets/imgs/rank-1.png',
+            'Bronze':     'assets/imgs/rank-2.png',
+            'Prata':      'assets/imgs/rank-3.png',
+            'Ouro':       'assets/imgs/rank-4.png',
+            'Platina':    'assets/imgs/rank-5.png',
+            'Diamante':   'assets/imgs/rank-6.png',
+            'Mestre':     'assets/imgs/rank-7.png',
+            'GraoMestre': 'assets/imgs/rank-8.png',
+            'Desafiante': 'assets/imgs/rank-9.png'
+        };
+
+        const rankNames = {
+            'Ferro': 'Ferro', 'Bronze': 'Bronze', 'Prata': 'Prata', 'Ouro': 'Ouro',
+            'Platina': 'Platina', 'Diamante': 'Diamante', 'Mestre': 'Mestre',
+            'GraoMestre': 'Grão Mestre', 'Desafiante': 'Desafiante'
+        };
+
+        const rankOrder = ['Ferro','Bronze','Prata','Ouro','Platina','Diamante','Mestre','GraoMestre','Desafiante'];
+
+        const basePrices = { 0:28, 1:36, 2:48, 3:64, 4:88, 5:128, 6:180, 7:260 };
+
+        let selectedQueue = 'Solo/Duo';
+
+        function updateRankImage(imgId, rankValue) {
+            document.getElementById(imgId).src = rankImages[rankValue];
+        }
+
+        function selectQueue(queue) {
+            selectedQueue = queue;
+            document.getElementById('btnSoloDuo').classList.toggle('active', queue === 'Solo/Duo');
+            document.getElementById('btnFlex').classList.toggle('active', queue === 'Flex');
+            calculatePrice();
+        }
+
+        function getDivLabel(val) {
+            const map = { '1': 'I', '2': 'II', '3': 'III', '4': 'IV' };
+            return map[val] || val;
+        }
+
+        function calculatePrice() {
+            const rankAtual    = document.getElementById('selectAtual').value;
+            const rankDesejado = document.getElementById('selectDesejado').value;
+            const divAtual     = parseInt(document.getElementById('divAtual').value);
+            const divDesejado  = parseInt(document.getElementById('divDesejado').value);
+
+            const idxAtual    = rankOrder.indexOf(rankAtual);
+            const idxDesejado = rankOrder.indexOf(rankDesejado);
+
+            const stepsAtual    = idxAtual    * 4 + (4 - divAtual);
+            const stepsDesejado = idxDesejado * 4 + (4 - divDesejado);
+            const diff = stepsDesejado - stepsAtual;
+
+            let price = 0;
+            if (diff > 0) {
+                price = Math.max(25, diff * 8);
+                if (selectedQueue === 'Flex') price = Math.round(price * 0.9);
+            }
+
+            const priceOld = Math.round(price * 1.25);
+            const routeText = `${rankNames[rankAtual]} ${getDivLabel(String(divAtual))} → ${rankNames[rankDesejado]} ${getDivLabel(String(divDesejado))}`;
+
+            document.getElementById('priceRoute').textContent = routeText;
+            document.getElementById('priceOld').textContent   = diff > 0 ? `R$ ${priceOld},00` : '—';
+            document.getElementById('priceNew').textContent   = diff > 0 ? `R$ ${price},00` : 'Selecione um elo maior';
+
+            const badge = document.querySelector('.discount-badge');
+            badge.style.display = diff > 0 ? 'inline-block' : 'none';
+        }
+
+        function comprar() {
+            const priceEl = document.getElementById('priceNew').textContent;
+            if (priceEl.startsWith('R$')) {
+                alert('Em breve você será redirecionado para o checkout!\n\n' + priceEl);
+            }
+        }
+
+        calculatePrice();
+    </script>
 </body>
 
 </html>

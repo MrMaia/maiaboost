@@ -1,22 +1,203 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
 
-*{
+* {
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
-.fontegrande {
+.fontegrande  { font-weight: 600; }
+.fontegrande2 { font-weight: 800; }
+
+body {
+    background: linear-gradient(160deg, #0d0d1a 0%, #1a0a2e 45%, #0a0a14 100%);
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Title */
+.titulo-page h6 {
+    color: #dc3545;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+.titulo-page h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-shadow: 0 0 40px rgba(220,53,69,0.4);
+}
+.titulo-page p {
+    color: rgba(255,255,255,0.65);
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Rank selector cards */
+.rank-card {
+    background: rgba(255,255,255,0.04);
+    border: 2px solid rgba(220, 53, 69, 0.25);
+    border-radius: 16px;
+    padding: 28px 24px;
+    transition: border-color 0.25s;
+    flex: 1;
+}
+.rank-card:hover {
+    border-color: rgba(220, 53, 69, 0.6);
+}
+.rank-card .rank-label {
+    color: #dc3545;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    display: block;
+    text-align: center;
+}
+.rank-card .rank-img {
+    max-height: 160px;
+    width: auto;
+    display: block;
+    margin: 12px auto 20px;
+    filter: drop-shadow(0 8px 20px rgba(220,53,69,0.35));
+    transition: transform 0.2s;
+}
+.rank-card .rank-img:hover {
+    transform: scale(1.05);
+}
+.rank-card .form-select {
+    background-color: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #fff;
     font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
-.fontegrande2 {
-    font-weight: 800;
+.rank-card .form-select:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220,53,69,0.2);
+    background-color: rgba(255,255,255,0.12);
+    color: #fff;
 }
-.fontegrande3 {
-    font-weight: 200;
+.rank-card .form-select option {
+    background: #1a1a2e;
+    color: #fff;
 }
-.textotamanho1 {
-    font-size: 4em;
-  }
 
-.textotamanho2 {
-    font-size: 1em;
-  }
+/* Arrow divider */
+.arrow-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #dc3545;
+    font-weight: 900;
+    padding: 0 8px;
+    flex-shrink: 0;
+}
+
+/* Queue card */
+.queue-card {
+    background: rgba(255,255,255,0.04);
+    border: 2px solid rgba(220, 53, 69, 0.25);
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: center;
+}
+.queue-card .queue-img {
+    max-height: 110px;
+    display: block;
+    margin: 0 auto 16px;
+    filter: drop-shadow(0 4px 12px rgba(220,53,69,0.3));
+}
+.queue-btn {
+    border: 2px solid rgba(255,255,255,0.2);
+    background: transparent;
+    color: rgba(255,255,255,0.7);
+    padding: 10px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.queue-btn.active,
+.queue-btn:hover {
+    background: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(220,53,69,0.4);
+}
+
+/* Price card */
+.price-card {
+    background: rgba(220, 53, 69, 0.08);
+    border: 2px solid rgba(220, 53, 69, 0.35);
+    border-radius: 16px;
+    padding: 32px 40px;
+    text-align: center;
+}
+.price-label {
+    color: #dc3545;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.price-route {
+    color: rgba(255,255,255,0.85);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+.price-old {
+    color: rgba(255,255,255,0.4);
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+.price-new {
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1;
+    text-shadow: 0 0 20px rgba(220,53,69,0.4);
+}
+.discount-badge {
+    display: inline-block;
+    background: #dc3545;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.btn-comprar {
+    background: linear-gradient(135deg, #dc3545, #a71d2a);
+    border: none;
+    border-radius: 12px;
+    padding: 16px 56px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(220, 53, 69, 0.45);
+    transition: all 0.2s;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    max-width: 320px;
+}
+.btn-comprar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(220, 53, 69, 0.65);
+    color: #fff;
+    background: linear-gradient(135deg, #e8404f, #c82333);
+}
